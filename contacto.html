@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Contacto</title>
+  </head>
+  <body>
+     <!-- cabecera  --> 
+     <header class="cabecera medium">
+      <h1>Contacto</h1>
+    </header>
+   <!-- Menu de navegación -->
+   <nav class="navbar" id="nav">
+    <ul>
+      <li class="navbar__nav-item navbar__nav-item--active">
+        <a href="/">Inicio</a>
+      </li>
+      <li class="navbar__navbar-Item">
+        <a href="./nosotros.html">Quiénes somos</a>
+      </li>
+      <li class="nav-item">
+        <a href="./reservas.html">Reservas</a>
+      </li>
+      <li class="nav-item">
+        <a href="./galeria.html">Galería</a>
+      </li>
+      <li class="nav-item">
+        <a href="./contacto.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <!--bloque bloque__elemento bloque__elemento--modificador  -->
+    <section class="form-container">
+      <h2 class="form-container__titulo form-container__titulo--negrita">Comunicate con nosotros</h2>
+      <form action="#" class="form-contacto">
+        <div class="form-box">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ingresa tu nombre"
+          autofocus/>
+        </div>
+        <div class="form-box">
+          <label for="apellido">Apellido</label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Ingresa tu apellido"
+          />
+        </div>
+        <div class="form-box">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="mail@mail" />
+        </div>
+        <div class="form-box">
+          <label for="tel">Teléfono</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Su teléfono"
+          />
+        </div>
+        <div class="form-box">
+          <label for="mensaje">Su mensaje</label>
+          <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-box">
+          <!--   <input type="submit" value="Enviar"> -->
+          <button class="btn btn-success" type="submit">Enviar</button>
+          <button class="btn btn-cancel" type="reset">Cancelar</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
